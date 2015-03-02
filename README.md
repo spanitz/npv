@@ -25,15 +25,15 @@ npv
 
 In some cases you may want to work with your package version on the command line. i.e. in a build/deployment pipeline. Some CI platforms support environment variables:
 
- ```bash
- cd <my-node-project>
- export PACKAGE_VERSION=$(npv)
- echo $PACKAGE_VERSION
- ```
+```bash
+cd <my-node-project>
+export PACKAGE_VERSION=$(npv)
+echo $PACKAGE_VERSION
+```
 
- Installation
- ---
+Installation
+---
 
- ```bash
- sudo npm install npv -g
+```bash
+sudo npm install npv -g
  ```
