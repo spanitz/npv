@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
-var v = require('root-require')('package.json').version;
-process.stdout.write(v);
+var path    = require('path'),
+    pkgjson = path.join(process.cwd(), 'package.json'),
+    version = require(pkgjson).version;
+
+process.stdout.write(version);
 process.exit();
