@@ -1,16 +1,30 @@
 {
-  "name": "pkgversion",
+  "name": "npv",
   "version": "0.0.1",
   "description": "Returns the current node package version",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Stefan Panitz <info@stefanpanitz.de> (https://github.com/spanitz)",
+  "license": "MIT",
   "dependencies": {
     "root-require": "^0.3.1"
   },
   "bin": {
     "npv": "npv.js"
-  }
+  },
+  "main": "npv.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spanitz/npv"
+  },
+  "keywords": [
+    "package.json",
+    "version"
+  ],
+  "bugs": {
+    "url": "https://github.com/spanitz/npv/issues"
+  },
+  "homepage": "https://github.com/spanitz/npv"
 }
