@@ -3,13 +3,6 @@ npv - Node Package Version
 
 Returns the current node package version on the command line.
 
-Installation
----
-
-```bash
-sudo npm install npv -g
-```
-
 Usage
 ---
 
@@ -18,8 +11,7 @@ If you've set the package version of your project in the `package.json` as follo
 ```json
 {
   "name": "my-node-project",
-  "version": "1.0.0",
-  // ...
+  "version": "1.0.0"
 }
 ```
 
@@ -39,3 +31,9 @@ In some cases you may want to work with your package version on the command line
  echo $PACKAGE_VERSION
  ```
 
+ Installation
+ ---
+
+ ```bash
+ sudo npm install npv -g
+ ```
