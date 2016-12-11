@@ -20,7 +20,7 @@ npv name
 my-node-project
 ```
 
-...just pass the property path
+...or just pass the property path.
 ```bash
 npv repository.url
 https://github.com/...
