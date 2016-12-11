@@ -1,5 +1,5 @@
 #npv - Node Package Version
-Prints out the current package version or any package information you want.
+Prints out the current package version or any other package information you want.
 
 ##Install
 ```bash

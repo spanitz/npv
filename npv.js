@@ -10,4 +10,6 @@ if (args.length === 1) {
 	property = args[0];
 }
 
-process.stdout.write(_.get(require(path.join(process.cwd(), 'package.json')), property));
+const value = _.get(require(path.join(process.cwd(), 'package.json')), property);
+
+process.stdout.write(_.isString(value) ? value : JSON.stringify(value));
