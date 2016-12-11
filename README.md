@@ -1,51 +1,35 @@
-npv - Node Package Version
-===
+#npv - Node Package Version
+Prints out the current package version or any package information you want.
 
-Returns the current node package version or name on the command line.
-
-Parameters
----
-* **--Version** (DEFAULT) Return the version of the project. Shortcut is **-v**.
-* **--name** Return the name of the project. Shortcut is **-a**.
-
-Usage
----
-
-If you've set the package version of your project in the `package.json` as follows:
-
-```json
-{
-  "name": "my-node-project",
-  "version": "1.0.0"
-}
+##Install
+```bash
+npm install npv
 ```
 
-Just change to your project directory and simply call `npv`
+##Usage
+Printing out the current package version
 
 ```bash
-cd <my-node-project>
 npv
 1.0.0
 ```
 
-To get the name of your project use the --name parameter
+Package name is quite easy...
 ```bash
-cd <my-node-project>
-npv --name
+npv name
 my-node-project
 ```
-    
-In some cases you may want to work with your package version on the command line. i.e. in a build/deployment pipeline. Some CI platforms support environment variables:
-    
-```bash
-cd <my-node-project>
-export PACKAGE_VERSION=$(npv)
-echo $PACKAGE_VERSION
-```
-    
-Installation
----
 
+...just pass the property path
 ```bash
-sudo npm install npv -g
- ```
+npv repository.url
+https://github.com/...
+```
+
+Storing package version in an environment variable    
+```bash
+export PACKAGE_VERSION=$(npv)
+```
+
+## License
+Released under the MIT license.

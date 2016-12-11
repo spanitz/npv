@@ -1,20 +1,15 @@
 {
   "name": "npv",
   "version": "0.1.0",
-  "description": "Returns the current node package version or package name",
+  "description": "Returns the current node package information",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stefan Panitz <info@stefanpanitz.de> (https://github.com/spanitz)",
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Jan Nahody",
-      "email": "jan.nahody@gmail.com",
-      "url": "https://github.com/nahody"
-    }
-  ],
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.2"
+  },
   "bin": {
     "npv": "npv.js"
   },
