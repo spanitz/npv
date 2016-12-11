@@ -1,6 +1,6 @@
 {
   "name": "npv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prints out the current package version or any other package information you want",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
