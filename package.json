@@ -1,7 +1,7 @@
 {
   "name": "npv",
-  "version": "0.1.0",
-  "description": "Returns the current node package information",
+  "version": "1.0.0",
+  "description": "Prints out the current package version or any other package information you want",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
