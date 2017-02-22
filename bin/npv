@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+var cli = require('commander')
+var colors = require('colors')
+var packageJson = require('../package.json')
+var npv = require('..')
+
+function exit (error) {
+  if (error) {
+    console.error(error)
+    process.exit(error.code || 1)
+  }
+
+  process.exit(0)
+}
+
+cli.version(packageJson.version)
+cli.usage('[options] [properties]')
+cli.on('--help', function(){
+  console.log('  Examples:')
+  console.log('')
+  console.log('    $ npv')
+  console.log('    $ npv name')
+  console.log('    $ npv name description keywords')
+  console.log('')
+})
+
+try {
+  cli.parse(process.argv)
+  var result = npv(cli.args, process.cwd())
+  for (var key in result) {
+    console.log(colors.yellow('key:'), key)
+    if (result[key] != null) {
+      console.log(colors.green('value:'), JSON.stringify(result[key], null, 4), '\n')
+    } else {
+      console.log(colors.red('error'), 'package.json does not contain property "' + key + '"', '\n')
+    }
+  }
+  exit(0)
+} catch (error) {
+  exit(error)
+}
