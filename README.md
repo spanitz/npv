@@ -1,12 +1,14 @@
-#npv - Node Package Version
+**+++ DEPRECATED: Note that this package is no longer maintained. +++**
+
+# npv - Node Package Version
 Prints out the current package version or any other package information you want.
 
-##Install
+## Install
 ```bash
 npm install npv
 ```
 
-##Usage
+## Usage
 Printing out the current package version
 
 ```bash
